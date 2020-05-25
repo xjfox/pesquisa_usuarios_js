@@ -72,6 +72,10 @@ function getStatistics(users) {
   };
 }
 
+function removeAccents(str) {
+  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
 function render(event) {
   if (event) {
     event.preventDefault();
@@ -83,7 +87,7 @@ function render(event) {
 
   if (searchText) {
     foundUsers = users.filter((obj) => {
-      return obj.name.toLowerCase().search(searchText) >= 0;
+      return removeAccents(obj.name).toLowerCase().search(searchText) >= 0;
     });
   }
 
