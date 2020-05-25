@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesquisa Usuários</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="center">Pesquisa de Usuários</h1>
+      <form id="form-search">
+        <div class="flex">
+          <div class="flex-full">
+            <input id="input-search" type="text" class="validate" />
+          </div>
+          <button type="submit" class="waves-effect waves-light btn">
+            Buscar
+          </button>
+        </div>
+      </form>
+      <div class="flex">
+        <div class="flex-full">
+          <div id="container-not-found">
+            <h4 class="center">Nenhum usuário filtrado</h4>
+          </div>
+          <div id="container-users" style="display: none;"></div>
+        </div>
+        <div class="separator"></div>
+        <div class="flex-full">
+          <div id="container-not-statistics">
+            <h4 class="center">Nada a ser exibido</h4>
+          </div>
+          <div id="container-statistics" style="display: none;"></div>
+        </div>
+      </div>
+    </div>
+    <div id="preloader" class="preloader">
+      <div class="preloader-wrapper active">
+        <div class="spinner-layer spinner-red-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div>
+          <div class="gap-patch">
+            <div class="circle"></div>
+          </div>
+          <div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

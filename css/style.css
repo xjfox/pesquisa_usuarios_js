@@ -1,0 +1,54 @@
+body {
+  background-color: rgb(26, 27, 38);
+  color: #fff;
+}
+
+input[type='text'] {
+  color: #fff;
+}
+
+h4 {
+  margin-bottom: 40px;
+}
+
+#container-not-statistics p {
+  margin: 0;
+}
+
+.user-item {
+  margin-bottom: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-full {
+  flex: 1;
+}
+
+.separator {
+  width: 1px;
+  background-color: gray;
+  margin: 0 10px;
+}
+
+.preloader {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
